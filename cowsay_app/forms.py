@@ -1,5 +1,5 @@
 from django import forms
 
 
-# class CowsayForm(forms.Form):
-#   text = forms.CharField(max_length=150)
+class CowsayForm(forms.Form):
+  text = forms.CharField(max_length=150)

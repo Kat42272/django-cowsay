@@ -1,5 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>The last 10 things the Cow said are:</h1>
+<h1>The 10 most recent things the Cow said are:</h1>
+
+<ul>
+  {% for item in data %}
+    <li>{{ forloop.counter }} - {{ item }}</li>
+  {% endfor %}
+</ul>
+
 {% endblock content %}
